@@ -1,5 +1,3 @@
-"use strict";
-
 const path = require('path');
 
 module.exports = {
@@ -21,5 +19,5 @@ module.exports = {
         exclude: /node_modules/
       }
     ]
-  }
+  },
 }
