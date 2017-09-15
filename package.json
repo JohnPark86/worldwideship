@@ -1,0 +1,28 @@
+{
+  "name": "worldwideship",
+  "version": "0.0.1",
+  "description": "Another version of the worldsideshippingllc website",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JohnPark86/worldwideship.git"
+  },
+  "keywords": [
+    "worldwideshipping"
+  ],
+  "author": "John Park",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JohnPark86/worldwideship/issues"
+  },
+  "homepage": "https://github.com/JohnPark86/worldwideship#readme",
+  "devDependencies": {
+    "react": "^15.6.1",
+    "react-dom": "^15.6.1",
+    "webpack": "^3.5.6",
+    "webpack-dev-server": "^2.8.2"
+  }
+}
