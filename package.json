@@ -4,7 +4,9 @@
   "description": "Another version of the worldsideshippingllc website",
   "main": "index.js",
   "scripts": {
-    "test": "test"
+    "test": "test",
+    "dev-server": "webpack-dev-server --open",
+    "build-js": "webpack --config ./webpack.config.js --verbose --progress --colors"
   },
   "repository": {
     "type": "git",
@@ -20,6 +22,12 @@
   },
   "homepage": "https://github.com/JohnPark86/worldwideship#readme",
   "devDependencies": {
+    "babel": "^6.23.0",
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.0",
+    "babel-env": "^2.4.1",
+    "babel-preset-env": "^1.6.0",
+    "babel-preset-react": "^6.24.1",
     "react": "^15.6.1",
     "react-dom": "^15.6.1",
     "webpack": "^3.5.6",
