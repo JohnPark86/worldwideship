@@ -6,7 +6,7 @@ export default class App extends React.Component {
 	render() {
 		return(
 			<div style={{textAlign: 'center'}}>
-				<h1>Worldwide Shipping LLC!</h1>
+				<img src={require('../imgs/logo.png')} />
 				<Navbar collapseOnSelect>
 				    <Navbar.Header>
 				      <Navbar.Brand>
