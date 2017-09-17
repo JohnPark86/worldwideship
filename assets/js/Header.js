@@ -1,7 +1,7 @@
 import React from 'react';
 import { Nav, Navbar, NavItem, MenuItem } from 'react-bootstrap';
 
-export default class App extends React.Component {
+export default class Header extends React.Component {
 
 	render() {
 		return(
