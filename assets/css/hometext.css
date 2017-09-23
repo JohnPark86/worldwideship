@@ -1,10 +1,14 @@
 p {
 	text-align: center;
-	line-height: 50px;
+	line-height: 25px;
 	font-size: 14px;
 
 }
 
 .bold {
 	font-weight: bold;
+}
+
+.homeTextPadding {
+	padding-top: 2%;
 }

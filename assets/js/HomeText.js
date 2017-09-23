@@ -6,7 +6,7 @@ export default class HomeText extends React.Component {
 
 	render(){
 		return(
-			<div>
+			<div className="homeTextPadding">
 			<p>Worldwide Shipping LLC was opened on the principle that people should be able to ship their cars with honest, licensed professionals at reasonable prices. We offer you personalized and simplified auto transportation for one of your most valued possessions – your vehicle! Our commitment as an owner-operated transport company is to provide you with professional, sincere, and dedicated services, from start to finish. Your complete satisfaction is, and always will be, our top priority.</p>
 
 					<p className="bold">Full coverage insurance!</p>
