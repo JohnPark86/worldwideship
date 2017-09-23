@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import Home from './Home';
 import Services from './Services'
+import Why from './WhyWWS'
 
 export default class App extends React.Component {
 
@@ -11,6 +12,7 @@ export default class App extends React.Component {
 			<div>
 				<Home />
 				<Services />
+				<Why />
 			</div>
 			)
 	}

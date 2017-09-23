@@ -5,10 +5,17 @@ p {
 
 }
 
+ul {
+	list-style-position: inside;
+}
+
 .bold {
 	font-weight: bold;
+	text-align: center;
 }
 
 .homeTextPadding {
 	padding-top: 2%;
 }
+
+
