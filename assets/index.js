@@ -1,8 +1,5 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Header from './js/Header';
-import ImageCarousel from './js/ImageCarousel'
-import Bootstrap from 'bootstrap/dist/css/bootstrap.css';
+import Home from './js/Home';
 
-ReactDOM.render(<Header />, document.getElementById('root'));
-ReactDOM.render(<ImageCarousel />, document.getElementById('imageCarousel'));
+ReactDOM.render(<Home />, document.getElementById('root'));
