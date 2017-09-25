@@ -1,20 +1,20 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Home from './Home';
-import Services from './Services'
-import Why from './WhyWWS'
-import FAQ from './FAQ'
+import Header from './Header';
+import Main from './Main';
+
 
 export default class App extends React.Component {
 
 	render(){
 		return(
 			<div>
-				<Home />
-				<Services />
-				<Why />
-				<FAQ />
+    			<Header />
+    			<Main />
 			</div>
-			)
+		)
 	}
 }
+
+
+

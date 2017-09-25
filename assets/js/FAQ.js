@@ -35,6 +35,7 @@ export default class FAQ extends React.Component{
       	      	<Collapsible triggerClassName="question" triggerOpenedClassName="question" trigger="Can I put items in my vehicle?">
       	        	<p>We advise you not to, as personal items are not insured if they are damaged or reported missing. If you decide to pack personal items inside your vehicle, it must not exceed 75 lbs. and must be kept in the trunk or back seats (below the window line).</p>
       	      	</Collapsible>
+      	      	<p>If you can’t find the answer to your question, you can reach us 24 hours a day, 365 days a year at support@worldwideshippingllc.com. For faster service, you can call us directly at 888-505-2851 from 8 am until 9 pm, 7 days a week.</p>
 			</div>
 		)
 	}

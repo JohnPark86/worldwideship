@@ -16,11 +16,11 @@ export default class Header extends React.Component {
 					    </Navbar.Header>
 					    <Navbar.Collapse>
 					      <Nav pullRight>
-					        <NavItem eventKey={1} href="#">Home</NavItem>
-					        <NavItem eventKey={2} href="#">Services</NavItem>
-					        <NavItem eventKey={3} href="#">Why Worldwide Shipping LLC?</NavItem>
-					        <NavItem eventKey={4} href="#">FAQ</NavItem>
-					        <NavItem eventKey={5} href="#">Contact Us</NavItem>
+					        <NavItem eventKey={1} href="#/">Home</NavItem>
+					        <NavItem eventKey={2} href="#/services">Services</NavItem>
+					        <NavItem eventKey={3} href="#/why">Why Worldwide Shipping LLC?</NavItem>
+					        <NavItem eventKey={4} href="#/faq">FAQ</NavItem>
+					        <NavItem eventKey={5} href="#/contact">Contact Us</NavItem>
 					      </Nav>
 					    </Navbar.Collapse>
 					  </Navbar>
