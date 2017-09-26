@@ -12,10 +12,10 @@ export default class Main extends React.Component{
 
 	render(){
 		return( 
-		 	<div className="container">
+		 	<div className="bodyContainer">
 			    <Switch>
 			      <Route exact path='\/' component={Home}/>
-			      <Route path="\/services" component={Services}/>  
+			      <Route path='\/services' component={Services}/>  
 			      <Route path='\/why' component={Why}/>
 			      <Route path='\/faq' component={FAQ}/>
 			      <Route path='\/contact' component={Contact}/>

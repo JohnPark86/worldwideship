@@ -7,7 +7,7 @@ export default class FAQ extends React.Component{
 	
 	render(){
 		return(
-			<div className="container">
+			<div>
 				<Collapsible triggerClassName="question" triggerOpenedClassName="question" trigger="Why am I getting such a wide range of prices?">
 		        	<p>When you receive an initial quote, it is NOT a guaranteed price! It is an estimate of what it ‘might’ cost to move your car. Most brokers will quote you a lower price to “bait you in”, and will call you the day prior to the scheduled pick up with an elaborate excuse as to why your price has been raised. Low quotes do not transport vehicles. If it sounds too good to be true – it probably is!</p>
 		      	</Collapsible>

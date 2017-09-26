@@ -1,11 +1,19 @@
 .centerCarousel {
-	margin: 0 auto;
+	margin: 10px auto;
 	width: 70%;
 	
 }
 
 .slogan {
-	width: 95%;
+	width: 55%;
+    font-size: 32px;
+    margin: 15px auto;
+    text-align: center;
+}
+
+.slogan2 {
+	width: 55%;
     font-size: 35px;
-    margin: 215px auto 0;
+    margin: 15px auto;
+    text-align: center;
 }

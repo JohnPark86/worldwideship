@@ -1,5 +1,11 @@
-.container {
-	padding: 5px;
+.bodyContainer {
+	padding: 18% 50px 25px 50px;
+}
+
+@media only screen and (max-width: 650px) {
+    .bodyContainer {
+        padding: 45% 50px 25px 50px;
+    }
 }
 
 .content {

@@ -7,7 +7,7 @@ export default class Services extends React.Component {
 
 	render(){
 		return(
-			<div className="container">
+			<div>
 				<h2>Domestic Auto Transport</h2>
 				<div className="content">
 					<img className="image-left" src={require('../imgs/services1.jpg')} />
