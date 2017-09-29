@@ -13,40 +13,40 @@ export default class ImageCarousel extends React.Component {
 				<div className="centerCarousel">   
 					<Carousel showThumbs={false}>
 						<div>
-		                    <img src={require('../imgs/Antique.jpg')}></img>
+		                    <img src={require('../img/Antique.jpg')}></img>
 		                </div>
 		                <div>
-		                    <img src={require('../imgs/Antique-2.jpg')}></img>
+		                    <img src={require('../img/Antique-2.jpg')}></img>
 		                </div>
 		                <div>
-		                    <img src={require('../imgs/Bentley.jpg')}></img>
+		                    <img src={require('../img/Bentley.jpg')}></img>
 		                </div>
 		                <div>
-		                    <img src={require('../imgs/black.jpg')}></img>
+		                    <img src={require('../img/black.jpg')}></img>
 		                </div>
 		                <div>
-		                    <img src={require('../imgs/black-2.jpg')}></img>
+		                    <img src={require('../img/black-2.jpg')}></img>
 		                </div>
 		                <div>
-		                    <img src={require('../imgs/Car-Carrier-2.jpg')}></img>
+		                    <img src={require('../img/Car-Carrier-2.jpg')}></img>
 		                </div>
 		                <div>
-		                    <img src={require('../imgs/car-shipping.jpg')}></img>
+		                    <img src={require('../img/car-shipping.jpg')}></img>
 		                </div>
 		                <div>
-		                    <img src={require('../imgs/Carrier.jpg')}></img>
+		                    <img src={require('../img/Carrier.jpg')}></img>
 		                </div>
 		                <div>
-		                    <img src={require('../imgs/exotic.jpg')}></img>
+		                    <img src={require('../img/exotic.jpg')}></img>
 		                </div>
 		                <div>
-		                    <img src={require('../imgs/porsche-1.jpg')}></img>
+		                    <img src={require('../img/porsche-1.jpg')}></img>
 		                </div>
 		                <div>
-		                    <img src={require('../imgs/Porsche.jpg')}></img>
+		                    <img src={require('../img/Porsche.jpg')}></img>
 		                </div>
 		                <div>
-		                    <img src={require('../imgs/red.jpg')}></img>
+		                    <img src={require('../img/red.jpg')}></img>
 		                </div>
 	            	</Carousel>
            		 </div>
