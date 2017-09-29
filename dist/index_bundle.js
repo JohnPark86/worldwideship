@@ -36375,19 +36375,19 @@ var _ref = _jsx(_reactBootstrap.Navbar, {}, void 0, _jsx(_reactBootstrap.Navbar.
 	pullRight: true
 }, void 0, _jsx(_reactBootstrap.NavItem, {
 	eventKey: 1,
-	href: '#\\/'
+	href: '#/'
 }, void 0, 'Home'), _jsx(_reactBootstrap.NavItem, {
 	eventKey: 2,
-	href: '#\\/services'
+	href: '#/services'
 }, void 0, 'Services'), _jsx(_reactBootstrap.NavItem, {
 	eventKey: 3,
-	href: '#\\/why'
+	href: '#/why'
 }, void 0, 'Why Worldwide Shipping LLC?'), _jsx(_reactBootstrap.NavItem, {
 	eventKey: 4,
-	href: '#\\/faq'
+	href: '#/faq'
 }, void 0, 'FAQ'), _jsx(_reactBootstrap.NavItem, {
 	eventKey: 5,
-	href: '#\\/contact'
+	href: '#/contact'
 }, void 0, 'Contact Us'))));
 
 var Header = function (_React$Component) {
@@ -48806,19 +48806,19 @@ var _ref = _jsx('div', {
 	className: 'bodyContainer'
 }, void 0, _jsx(_reactRouterDom.Switch, {}, void 0, _jsx(_reactRouterDom.Route, {
 	exact: true,
-	path: '/',
+	path: '\\/',
 	component: _Home2.default
 }), _jsx(_reactRouterDom.Route, {
-	path: 'services',
+	path: '\\/services',
 	component: _Services2.default
 }), _jsx(_reactRouterDom.Route, {
-	path: 'why',
+	path: '\\/why',
 	component: _WhyWWS2.default
 }), _jsx(_reactRouterDom.Route, {
-	path: 'faq',
+	path: '\\/faq',
 	component: _FAQ2.default
 }), _jsx(_reactRouterDom.Route, {
-	path: 'contact',
+	path: '\\/contact',
 	component: _Contact2.default
 })));
 
