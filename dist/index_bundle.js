@@ -967,15 +967,6 @@ exports.default = (0, _createChainableTypeChecker2.default)(elementType);
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-
-
-module.exports = __webpack_require__(243);
-
-/***/ }),
-/* 15 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
 /*
 object-assign
 (c) Sindre Sorhus
@@ -1066,6 +1057,15 @@ module.exports = shouldUseNative() ? Object.assign : function (target, source) {
 
 	return to;
 };
+
+/***/ }),
+/* 15 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+module.exports = __webpack_require__(243);
 
 /***/ }),
 /* 16 */
@@ -2203,7 +2203,7 @@ module.exports = ReactCurrentOwner;
 
 
 var _prodInvariant = __webpack_require__(11),
-    _assign = __webpack_require__(15);
+    _assign = __webpack_require__(14);
 
 var CallbackQueue = __webpack_require__(147);
 var PooledClass = __webpack_require__(36);
@@ -2620,7 +2620,7 @@ exports.default = SafeAnchor;
 
 
 
-var _assign = __webpack_require__(15);
+var _assign = __webpack_require__(14);
 
 var PooledClass = __webpack_require__(36);
 
@@ -3194,7 +3194,7 @@ if (typeof __g == 'number') __g = global; // eslint-disable-line no-undef
 
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
-var _assign = __webpack_require__(15);
+var _assign = __webpack_require__(14);
 
 var ReactCurrentOwner = __webpack_require__(26);
 
@@ -4150,7 +4150,7 @@ function updateLink (link, options, obj) {
 
 
 
-var _assign = __webpack_require__(15);
+var _assign = __webpack_require__(14);
 
 var ReactBaseClasses = __webpack_require__(136);
 var ReactChildren = __webpack_require__(229);
@@ -5587,7 +5587,7 @@ exports.default = function (componentOrElement) {
   return (0, _ownerDocument2.default)(_reactDom2.default.findDOMNode(componentOrElement));
 };
 
-var _reactDom = __webpack_require__(14);
+var _reactDom = __webpack_require__(15);
 
 var _reactDom2 = _interopRequireDefault(_reactDom);
 
@@ -6492,7 +6492,7 @@ module.exports = escapeTextContentForBrowser;
 
 
 
-var _assign = __webpack_require__(15);
+var _assign = __webpack_require__(14);
 
 var EventPluginRegistry = __webpack_require__(69);
 var ReactEventEmitterMixin = __webpack_require__(277);
@@ -7055,7 +7055,7 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactDom = __webpack_require__(14);
+var _reactDom = __webpack_require__(15);
 
 var _reactDom2 = _interopRequireDefault(_reactDom);
 
@@ -9148,7 +9148,7 @@ module.exports = ReactUpdateQueue;
 
 
 
-var _assign = __webpack_require__(15);
+var _assign = __webpack_require__(14);
 
 var emptyFunction = __webpack_require__(24);
 var warning = __webpack_require__(10);
@@ -11133,7 +11133,7 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = getContainer;
 
-var _reactDom = __webpack_require__(14);
+var _reactDom = __webpack_require__(15);
 
 var _reactDom2 = _interopRequireDefault(_reactDom);
 
@@ -11607,7 +11607,7 @@ exports.default = (0, _bootstrapUtils.bsClass)('tab', TabContent);
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
 var _prodInvariant = __webpack_require__(43),
-    _assign = __webpack_require__(15);
+    _assign = __webpack_require__(14);
 
 var ReactNoopUpdateQueue = __webpack_require__(137);
 
@@ -13754,7 +13754,7 @@ module.exports = ReactPropTypesSecret;
 
 
 
-var _assign = __webpack_require__(15);
+var _assign = __webpack_require__(14);
 
 var LinkedValueUtils = __webpack_require__(95);
 var ReactDOMComponentTree = __webpack_require__(16);
@@ -13963,7 +13963,7 @@ module.exports = ReactDOMSelect;
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
 var _prodInvariant = __webpack_require__(11),
-    _assign = __webpack_require__(15);
+    _assign = __webpack_require__(14);
 
 var ReactCompositeComponent = __webpack_require__(284);
 var ReactEmptyComponent = __webpack_require__(160);
@@ -16644,7 +16644,7 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactDom = __webpack_require__(14);
+var _reactDom = __webpack_require__(15);
 
 var _reactDom2 = _interopRequireDefault(_reactDom);
 
@@ -16904,7 +16904,7 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactDom = __webpack_require__(14);
+var _reactDom = __webpack_require__(15);
 
 var _reactDom2 = _interopRequireDefault(_reactDom);
 
@@ -17448,7 +17448,7 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactDom = __webpack_require__(14);
+var _reactDom = __webpack_require__(15);
 
 var _reactDom2 = _interopRequireDefault(_reactDom);
 
@@ -18015,7 +18015,7 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactDom = __webpack_require__(14);
+var _reactDom = __webpack_require__(15);
 
 var _reactDom2 = _interopRequireDefault(_reactDom);
 
@@ -18616,7 +18616,7 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactDom = __webpack_require__(14);
+var _reactDom = __webpack_require__(15);
 
 var _reactDom2 = _interopRequireDefault(_reactDom);
 
@@ -20378,7 +20378,7 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactDom = __webpack_require__(14);
+var _reactDom = __webpack_require__(15);
 
 var _reactDom2 = _interopRequireDefault(_reactDom);
 
@@ -20754,7 +20754,7 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactDom = __webpack_require__(14);
+var _reactDom = __webpack_require__(15);
 
 var _reactDom2 = _interopRequireDefault(_reactDom);
 
@@ -21812,7 +21812,7 @@ module.exports = factory(Component, isValidElement, ReactNoopUpdateQueue);
 
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
-var _assign = __webpack_require__(15);
+var _assign = __webpack_require__(14);
 
 var emptyObject = __webpack_require__(68);
 var _invariant = __webpack_require__(9);
@@ -23273,7 +23273,7 @@ module.exports = BeforeInputEventPlugin;
 
 
 
-var _assign = __webpack_require__(15);
+var _assign = __webpack_require__(14);
 
 var PooledClass = __webpack_require__(36);
 
@@ -25315,7 +25315,7 @@ module.exports = ReactDOMIDOperations;
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
 var _prodInvariant = __webpack_require__(11),
-    _assign = __webpack_require__(15);
+    _assign = __webpack_require__(14);
 
 var AutoFocusUtils = __webpack_require__(268);
 var CSSPropertyOperations = __webpack_require__(269);
@@ -27037,7 +27037,7 @@ module.exports = getVendorPrefixedEventName;
 
 
 var _prodInvariant = __webpack_require__(11),
-    _assign = __webpack_require__(15);
+    _assign = __webpack_require__(14);
 
 var DOMPropertyOperations = __webpack_require__(155);
 var LinkedValueUtils = __webpack_require__(95);
@@ -27329,7 +27329,7 @@ module.exports = ReactDOMInput;
 
 
 
-var _assign = __webpack_require__(15);
+var _assign = __webpack_require__(14);
 
 var React = __webpack_require__(42);
 var ReactDOMComponentTree = __webpack_require__(16);
@@ -27458,7 +27458,7 @@ module.exports = ReactDOMOption;
 
 
 var _prodInvariant = __webpack_require__(11),
-    _assign = __webpack_require__(15);
+    _assign = __webpack_require__(14);
 
 var LinkedValueUtils = __webpack_require__(95);
 var ReactDOMComponentTree = __webpack_require__(16);
@@ -28237,7 +28237,7 @@ module.exports = ReactChildReconciler;
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
 var _prodInvariant = __webpack_require__(11),
-    _assign = __webpack_require__(15);
+    _assign = __webpack_require__(14);
 
 var React = __webpack_require__(42);
 var ReactComponentEnvironment = __webpack_require__(96);
@@ -29449,7 +29449,7 @@ module.exports = flattenChildren;
 
 
 
-var _assign = __webpack_require__(15);
+var _assign = __webpack_require__(14);
 
 var PooledClass = __webpack_require__(36);
 var Transaction = __webpack_require__(70);
@@ -29689,7 +29689,7 @@ module.exports = ReactServerUpdateQueue;
 
 
 
-var _assign = __webpack_require__(15);
+var _assign = __webpack_require__(14);
 
 var DOMLazyTree = __webpack_require__(45);
 var ReactDOMComponentTree = __webpack_require__(16);
@@ -29897,7 +29897,7 @@ module.exports = {
 
 
 var _prodInvariant = __webpack_require__(11),
-    _assign = __webpack_require__(15);
+    _assign = __webpack_require__(14);
 
 var DOMChildrenOperations = __webpack_require__(92);
 var DOMLazyTree = __webpack_require__(45);
@@ -30064,7 +30064,7 @@ module.exports = ReactDOMTextComponent;
 
 
 
-var _assign = __webpack_require__(15);
+var _assign = __webpack_require__(14);
 
 var ReactUpdates = __webpack_require__(27);
 var Transaction = __webpack_require__(70);
@@ -30137,7 +30137,7 @@ module.exports = ReactDefaultBatchingStrategy;
 
 
 
-var _assign = __webpack_require__(15);
+var _assign = __webpack_require__(14);
 
 var EventListener = __webpack_require__(163);
 var ExecutionEnvironment = __webpack_require__(17);
@@ -30380,7 +30380,7 @@ module.exports = ReactInjection;
 
 
 
-var _assign = __webpack_require__(15);
+var _assign = __webpack_require__(14);
 
 var CallbackQueue = __webpack_require__(147);
 var PooledClass = __webpack_require__(36);
@@ -36293,7 +36293,7 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactDom = __webpack_require__(14);
+var _reactDom = __webpack_require__(15);
 
 var _reactDom2 = _interopRequireDefault(_reactDom);
 
@@ -36380,9 +36380,6 @@ var _ref = _jsx(_reactBootstrap.Navbar, {}, void 0, _jsx(_reactBootstrap.Navbar.
 	eventKey: 2,
 	href: '#/services'
 }, void 0, 'Services'), _jsx(_reactBootstrap.NavItem, {
-	eventKey: 3,
-	href: '#/why'
-}, void 0, 'Why Worldwide Shipping LLC?'), _jsx(_reactBootstrap.NavItem, {
 	eventKey: 4,
 	href: '#/faq'
 }, void 0, 'FAQ'), _jsx(_reactBootstrap.NavItem, {
@@ -39966,7 +39963,7 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactDom = __webpack_require__(14);
+var _reactDom = __webpack_require__(15);
 
 var _reactDom2 = _interopRequireDefault(_reactDom);
 
@@ -42619,7 +42616,7 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactDom = __webpack_require__(14);
+var _reactDom = __webpack_require__(15);
 
 var _reactDom2 = _interopRequireDefault(_reactDom);
 
@@ -45267,7 +45264,7 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactDom = __webpack_require__(14);
+var _reactDom = __webpack_require__(15);
 
 var _reactDom2 = _interopRequireDefault(_reactDom);
 
@@ -45797,7 +45794,7 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactDom = __webpack_require__(14);
+var _reactDom = __webpack_require__(15);
 
 var _reactDom2 = _interopRequireDefault(_reactDom);
 
@@ -48768,7 +48765,7 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactDom = __webpack_require__(14);
+var _reactDom = __webpack_require__(15);
 
 var _reactDom2 = _interopRequireDefault(_reactDom);
 
@@ -48782,15 +48779,11 @@ var _Services = __webpack_require__(542);
 
 var _Services2 = _interopRequireDefault(_Services);
 
-var _WhyWWS = __webpack_require__(551);
-
-var _WhyWWS2 = _interopRequireDefault(_WhyWWS);
-
-var _FAQ = __webpack_require__(552);
+var _FAQ = __webpack_require__(551);
 
 var _FAQ2 = _interopRequireDefault(_FAQ);
 
-var _Contact = __webpack_require__(556);
+var _Contact = __webpack_require__(555);
 
 var _Contact2 = _interopRequireDefault(_Contact);
 
@@ -48811,9 +48804,6 @@ var _ref = _jsx('div', {
 }), _jsx(_reactRouterDom.Route, {
 	path: '\\/services',
 	component: _Services2.default
-}), _jsx(_reactRouterDom.Route, {
-	path: '\\/why',
-	component: _WhyWWS2.default
 }), _jsx(_reactRouterDom.Route, {
 	path: '\\/faq',
 	component: _FAQ2.default
@@ -48862,7 +48852,7 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactDom = __webpack_require__(14);
+var _reactDom = __webpack_require__(15);
 
 var _reactDom2 = _interopRequireDefault(_reactDom);
 
@@ -49067,7 +49057,7 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactDom = __webpack_require__(14);
+var _reactDom = __webpack_require__(15);
 
 var _reactDom2 = _interopRequireDefault(_reactDom);
 
@@ -49895,7 +49885,7 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactDom = __webpack_require__(14);
+var _reactDom = __webpack_require__(15);
 
 var _reactDom2 = _interopRequireDefault(_reactDom);
 
@@ -50079,7 +50069,7 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactDom = __webpack_require__(14);
+var _reactDom = __webpack_require__(15);
 
 var _reactDom2 = _interopRequireDefault(_reactDom);
 
@@ -50279,66 +50269,6 @@ module.exports = __webpack_require__.p + "d354d2d5c9ff696160e92c0bc5137cd6.jpg";
 
 
 Object.defineProperty(exports, "__esModule", {
-	value: true
-});
-
-var _jsx = function () { var REACT_ELEMENT_TYPE = typeof Symbol === "function" && Symbol.for && Symbol.for("react.element") || 0xeac7; return function createRawReactElement(type, props, key, children) { var defaultProps = type && type.defaultProps; var childrenLength = arguments.length - 3; if (!props && childrenLength !== 0) { props = {}; } if (props && defaultProps) { for (var propName in defaultProps) { if (props[propName] === void 0) { props[propName] = defaultProps[propName]; } } } else if (!props) { props = defaultProps || {}; } if (childrenLength === 1) { props.children = children; } else if (childrenLength > 1) { var childArray = Array(childrenLength); for (var i = 0; i < childrenLength; i++) { childArray[i] = arguments[i + 3]; } props.children = childArray; } return { $$typeof: REACT_ELEMENT_TYPE, type: type, key: key === undefined ? null : '' + key, ref: null, props: props, _owner: null }; }; }();
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-var _react = __webpack_require__(0);
-
-var _react2 = _interopRequireDefault(_react);
-
-var _reactDom = __webpack_require__(14);
-
-var _reactDom2 = _interopRequireDefault(_reactDom);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-var _ref = _jsx('div', {}, void 0, _jsx('p', {}, void 0, 'Worldwide Shipping LLC is a family owned and operated transport brokerage located in South Florida. We are dedicated to providing honest and reliable service at affordable rates. We are one of the few auto transport companies in this industry where you work directly with the owners; not an irritating sales agent or uninterested customer service rep. We can assure you that when you call us, you\u2019ll receive expert advice every time. We take great pride in each customer\u2019s satisfaction. Your willingness to use us again in the future is our objective.'), _jsx('p', {}, void 0, 'All of our vehicle carriers are pre-screened to ensure that you are in contact with only the most reputable carriers in the industry. There are thousands ofDepartment of Transportation (DOT) registered auto transporters on the market, however a high percentage of those transporters have been rated very poorly in the past, and are now quite desperate to find a vehicle to ship. The majority of brokers purposely choose a poorly rated carrier to make a bigger brokers fee, thus leaving the client with missed pick up/delivery dates, uninsured damages to their vehicle, and an overall lack of customer service. '), _jsx('p', {}, void 0, 'Here at Worldwide Shipping LLC, we will only select a carrier for you if they have a 98% rating (or higher), and at least 3 years experience. This way, we only provide you with the safest, most reputable auto transporters in the nation. We have pre-selected the top auto transport companies so they can compete for your business, insuring you receive the best service at the best possible price.'), _jsx('p', {
-	className: 'bold'
-}, void 0, 'We Offer: '), _jsx('ul', {
-	className: 'bold'
-}, void 0, _jsx('li', {}, void 0, 'Military Discounts'), _jsx('li', {}, void 0, 'Multiple Car Discounts'), _jsx('li', {}, void 0, 'Repeat Client Discounts'), _jsx('li', {}, void 0, 'Dealership Rewards Accounts')), _jsx('p', {}, void 0, 'Whether you need to transport a vehicle to the next town or across the world, Worldwide Shipping LLC makes it easy and convenient with both domestic and international services. Our prices are among the most competitive of all reputable vehicle transporters in the industry. Our goal is not to be the largest company, but to be the one that provides excellence and integrity in an industry that lacks both.'), _jsx('p', {
-	className: 'bold'
-}, void 0, 'Give us a call directly at 888-505-2851.'));
-
-var WhyWWS = function (_React$Component) {
-	_inherits(WhyWWS, _React$Component);
-
-	function WhyWWS() {
-		_classCallCheck(this, WhyWWS);
-
-		return _possibleConstructorReturn(this, (WhyWWS.__proto__ || Object.getPrototypeOf(WhyWWS)).apply(this, arguments));
-	}
-
-	_createClass(WhyWWS, [{
-		key: 'render',
-		value: function render() {
-			return _ref;
-		}
-	}]);
-
-	return WhyWWS;
-}(_react2.default.Component);
-
-exports.default = WhyWWS;
-
-/***/ }),
-/* 552 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
@@ -50350,15 +50280,15 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactDom = __webpack_require__(14);
+var _reactDom = __webpack_require__(15);
 
 var _reactDom2 = _interopRequireDefault(_reactDom);
 
-var _reactCollapsible = __webpack_require__(553);
+var _reactCollapsible = __webpack_require__(552);
 
 var _reactCollapsible2 = _interopRequireDefault(_reactCollapsible);
 
-__webpack_require__(554);
+__webpack_require__(553);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -50369,6 +50299,14 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
 var _ref = _jsx('div', {}, void 0, _jsx(_reactCollapsible2.default, {
+  triggerClassName: 'question',
+  triggerOpenedClassName: 'question',
+  trigger: 'Why Worldwide Shipping LLC?'
+}, void 0, _jsx('p', {}, void 0, 'All of our vehicle carriers are pre-screened to ensure that you are in contact with only the most reputable carriers in the industry. There are thousands ofDepartment of Transportation (DOT) registered auto transporters on the market, however a high percentage of those transporters have been rated very poorly in the past, and are now quite desperate to find a vehicle to ship. The majority of brokers purposely choose a poorly rated carrier to make a bigger brokers fee, thus leaving the client with missed pick up/delivery dates, uninsured damages to their vehicle, and an overall lack of customer service. '), _jsx('p', {}, void 0, 'Here at Worldwide Shipping LLC, we will only select a carrier for you if they have a 98% rating (or higher), and at least 3 years experience. This way, we only provide you with the safest, most reputable auto transporters in the nation. We have pre-selected the top auto transport companies so they can compete for your business, insuring you receive the best service at the best possible price.'), _jsx('p', {
+  className: 'bold'
+}, void 0, 'We Offer: '), _jsx('ul', {
+  className: 'bold'
+}, void 0, _jsx('li', {}, void 0, 'Military Discounts'), _jsx('li', {}, void 0, 'Multiple Car Discounts'), _jsx('li', {}, void 0, 'Repeat Client Discounts'), _jsx('li', {}, void 0, 'Dealership Rewards Accounts')), _jsx('p', {}, void 0, 'Whether you need to transport a vehicle to the next town or across the world, Worldwide Shipping LLC makes it easy and convenient with both domestic and international services. Our prices are among the most competitive of all reputable vehicle transporters in the industry. Our goal is not to be the largest company, but to be the one that provides excellence and integrity in an industry that lacks both.')), _jsx(_reactCollapsible2.default, {
   triggerClassName: 'question',
   triggerOpenedClassName: 'question',
   trigger: 'Why am I getting such a wide range of prices?'
@@ -50428,7 +50366,7 @@ var FAQ = function (_React$Component) {
 exports.default = FAQ;
 
 /***/ }),
-/* 553 */
+/* 552 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -50713,13 +50651,13 @@ Collapsible.defaultProps = {
 exports.default = Collapsible;
 
 /***/ }),
-/* 554 */
+/* 553 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(555);
+var content = __webpack_require__(554);
 if(typeof content === 'string') content = [[module.i, content, '']];
 // Prepare cssTransformation
 var transform;
@@ -50744,7 +50682,7 @@ if(false) {
 }
 
 /***/ }),
-/* 555 */
+/* 554 */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(40)(undefined);
@@ -50758,7 +50696,7 @@ exports.push([module.i, ".question {\n\ttext-decoration: underline;\n\tfont-weig
 
 
 /***/ }),
-/* 556 */
+/* 555 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -50776,7 +50714,7 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactDom = __webpack_require__(14);
+var _reactDom = __webpack_require__(15);
 
 var _reactDom2 = _interopRequireDefault(_reactDom);
 
