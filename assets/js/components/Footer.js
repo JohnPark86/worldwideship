@@ -12,12 +12,12 @@ export default class Footer extends React.Component {
 					<img src={require('../../img/fmcsa.gif')} />
 				</div>
 				<div className="footerFloatCenter">
-					<img src={require('../../img/payment.png')} />
+					<img className="payments" src={require('../../img/payment.png')} />
 					<div className="footerContactLeft">
 						<p><b>Toll free:</b> 888-505-2851</p>
 						<p><b>Local:</b> 305-901-1410</p>
 					</div>
-					<div>
+					<div className="footerContactLeft">
 						<p><b>Fax:</b> 888-505-2853</p>
 						<p><b>MC #:</b> 934235</p>
 					</div>

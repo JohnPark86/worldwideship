@@ -1,12 +1,18 @@
 .footer {
-	width: 100%;
+	width: 90%;
     margin: 0 auto;
     background-color: #f8f8f8;
     border-color: #e7e7e7;
 }
 
+.footer img {
+	padding: 10px;
+	max-width: 100%;
+}
+
 .footerContactLeft {
     float: left;
+    padding: 3px;
 }
 
 .footerContactRight {
@@ -15,20 +21,18 @@
 }
 
 .footerFloatLeft {
-	width: 33%;
+	width: 30%;
 	float: left;
-	padding-left: 5%;
 }
 
 .footerFloatCenter {
-	width: 33%;
+	width: 40%;
 	float: left;
-	padding-left: 5%;
+	padding: 0 7%;
 }
 
 .footerFloatRight {
-	width: 33%;
+	width: 30%;
 	float: left;
-	padding-left: 7%;
+	padding-left: 6%;
 }
-
