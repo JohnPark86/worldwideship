@@ -1,33 +1,26 @@
 .footer {
 	width: 100%;
-    margin: 0 auto;
     background-color: #f8f8f8;
     border-color: #e7e7e7;
 }
 
 .footer img {
-	padding: 5px 25px;
+	padding: 5px 23px;
 	max-width: 100%;
 }
 
-.footerContact {
-    float: left;
-    padding: 3px;
+.float-left {
+	float: left;
+	padding-bottom: 1%;
+	padding-left: 3%;
 }
 
-.footerFloatLeft {
-	width: 50%;
-	margin: 0 auto;
-}
-
-.footerFloatRight {
-	width: 50%;
-	margin: 0 auto;
-	clear: left;
+.float-left ul li:first-child {
+	list-style: none;
 }
 
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 450px) {
     
     .footer {
 		width: 100%;
@@ -37,20 +30,10 @@
 	}
 
     .footer img {
-    	float: none;
+   		float: none;
     	margin: 0 auto;
-		padding: 15px 50px;
-		max-width: 300px;
+    	padding: 15px 35px;
+    	max-width: 400px;
 	}
 
-	.footerContact {
-		float: none;
-		padding: 0px;
-	}
-
-	.footerFloatRight {
-		width: 70%;
-		margin: 0 auto;
-		clear: left;
-	}
 }
