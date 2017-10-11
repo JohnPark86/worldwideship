@@ -1,38 +1,39 @@
 .footer {
-	width: 90%;
-    margin: 0 auto;
+	width: 100%;
     background-color: #f8f8f8;
     border-color: #e7e7e7;
 }
 
 .footer img {
-	padding: 10px;
+	padding: 5px 23px;
 	max-width: 100%;
 }
 
-.footerContactLeft {
-    float: left;
-    padding: 3px;
-}
-
-.footerContactRight {
-	width: 150px;
-    float: right;
-}
-
-.footerFloatLeft {
-	width: 30%;
+.float-left {
 	float: left;
+	padding-bottom: 1%;
+	padding-left: 3%;
 }
 
-.footerFloatCenter {
-	width: 40%;
-	float: left;
-	padding: 0 7%;
+.float-left ul li:first-child {
+	list-style: none;
 }
 
-.footerFloatRight {
-	width: 30%;
-	float: left;
-	padding-left: 6%;
+
+@media only screen and (max-width: 450px) {
+    
+    .footer {
+		width: 100%;
+    	margin: 0 auto;
+    	background-color: #f8f8f8;
+    	border-color: #e7e7e7;
+	}
+
+    .footer img {
+   		float: none;
+    	margin: 0 auto;
+    	padding: 15px 35px;
+    	max-width: 400px;
+	}
+
 }
