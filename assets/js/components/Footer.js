@@ -7,8 +7,8 @@ export default class Footer extends React.Component {
 
 	render(){
 		return(
-			<div className="footer">
-				<div className="float-left">
+			<footer className="footer">
+				<div className="container-left">
 					<ul>
 						<li><b><u>CONTACT US:</u></b></li>
 						<li><b>Toll free:</b> 888-505-2851</li>
@@ -17,16 +17,16 @@ export default class Footer extends React.Component {
 						<li><b>MC #:</b> 934235</li>
 					</ul>
 				</div>
-				<div className="float-left">
+				<div className="container-center">
 					<img src={require('../../img/central.png')} />
 					<img src={require('../../img/fmcsa.gif')} />
 					<img src={require('../../img/dept.png')} />
 					<img src={require('../../img/auth.png')} />
 				</div>
-				<div className="float-left">
+				<div className="container-right">
 					<img src={require('../../img/payment.png')} />
 				</div>
-			</div>
+			</footer>
 		);
 	}
 }

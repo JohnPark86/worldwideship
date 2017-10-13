@@ -20,6 +20,7 @@
 
 .navbar-brand a {
     font-size: 24px;
+    text-decoration: underline;
 }
 
 .navbar-brand>img {
@@ -29,8 +30,11 @@
 }
 
 .navbar-default .navbar-collapse, .navbar-default .navbar-form {
-    border-color: #e7e7e7;
     background-color: #f8f8f8;
+}
+
+.navbar-collapse.in {
+    border-bottom: 2px solid;
 }
 
 .navbar-right {

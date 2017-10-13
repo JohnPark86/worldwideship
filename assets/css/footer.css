@@ -1,7 +1,8 @@
 .footer {
 	width: 100%;
+	overflow: hidden;
     background-color: #f8f8f8;
-    border-color: #e7e7e7;
+    border: 1px solid #e7e7e7;
 }
 
 .footer img {
@@ -9,10 +10,29 @@
 	max-width: 100%;
 }
 
-.float-left {
+.container-left {
+	font-size: 16px;
 	float: left;
+	padding-top: 4%;
 	padding-bottom: 1%;
 	padding-left: 3%;
+	width: 33.3%;
+}
+
+.container-center {
+	float: left;
+	padding-top: 5px;
+	padding-bottom: 1%;
+	padding-left: 3%;
+	width: 33.3%;
+}
+
+.container-right {
+	float: left;
+	padding-top: 5%;
+	padding-left: 2%;
+	padding-bottom: 1%;
+	width: 33.3%;
 }
 
 .float-left ul li:first-child {
@@ -20,20 +40,39 @@
 }
 
 
-@media only screen and (max-width: 450px) {
+@media only screen and (max-width: 1050px) {
     
     .footer {
 		width: 100%;
-    	margin: 0 auto;
     	background-color: #f8f8f8;
-    	border-color: #e7e7e7;
+    	border: 1px solid #e7e7e7;
 	}
 
     .footer img {
    		float: none;
     	margin: 0 auto;
     	padding: 15px 35px;
-    	max-width: 400px;
+    	max-width: 350px;
 	}
+
+	.container-left {
+		width: 100%;
+		margin: 0 auto;
+		padding-top: 0;
+		padding-bottom: 1%;
+	}
+
+	.container-center {
+		width: 100%;
+		margin: 0 auto;
+		padding-bottom: 1%;
+	}
+
+	.container-right {
+		clear: both;
+		padding-top: 0;
+		padding-left: 3%;
+	}
+
 
 }
