@@ -25,8 +25,8 @@
 
 .navbar-brand>img {
     padding: 25px 0px 0px 0px;
-    width: 23%;
-    margin-top: 5%;
+    width: 50%;
+    margin-top: 11%;
 }
 
 .navbar-default .navbar-collapse, .navbar-default .navbar-form {
@@ -38,5 +38,5 @@
 }
 
 .navbar-right {
-    font-size: 20px;
+    font-size: 28px;
 }
