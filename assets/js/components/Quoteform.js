@@ -1,5 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import {} from '../../css/quoteform.css'
+
 
 
 export default class QuoteForm extends React.Component {
@@ -19,7 +21,8 @@ export default class QuoteForm extends React.Component {
     		year: '',
     		make: '',
     		model: '',
-    		running: ''
+    		running: '',
+    		info: ''
     	};
     	this.handleChange = this.handleChange.bind(this);
     	this.handleSubmit = this.handleSubmit.bind(this);
@@ -44,7 +47,8 @@ export default class QuoteForm extends React.Component {
     		" --- " + this.state.year +
     		" --- " + this.state.make + 
     		" --- " + this.state.model + 
-    		" --- " + this.state.running
+    		" --- " + this.state.running +
+    		" --- " + this.state.info
     		);
  		event.preventDefault();
   	}
@@ -53,63 +57,70 @@ export default class QuoteForm extends React.Component {
     	return (
       	<form onSubmit={this.handleSubmit}>
       		<h3> Your Info </h3>
-        	<label>
+        	<label className="margin-left">
           		Your Name:
-          		<input id="name" type="text" value={this.state.name} onChange={this.handleChange} />
+          		<input  className="form-control" id="name" type="text" value={this.state.name} onChange={this.handleChange} required />
         	</label>
-        	<label>
+        	<label className="margin-left">
           		Your Phone Number:
-          		<input id="number" type="text" value={this.state.number} onChange={this.handleChange} />
+          		<input className="form-control" id="number" type="text" value={this.state.number} onChange={this.handleChange} required />
         	</label>
-        	<label>
+        	<label className="margin-left">
           		Your Email:
-          		<input id="email" type="text" value={this.state.email} onChange={this.handleChange} />
+          		<input className="form-control" id="email" type="text" value={this.state.email} onChange={this.handleChange} required />
         	</label>
         	<h3> Pick-up Info </h3>
-        	<label>
+        	<label className="margin-left">
           		City:
-          		<input id="puCity" type="text" value={this.state.puCity} onChange={this.handleChange} />
+          		<input className="form-control" id="puCity" type="text" value={this.state.puCity} onChange={this.handleChange} required />
         	</label>
-        	<label>
+        	<label className="margin-left">
           		State:
-          		<input id="puState" type="text" value={this.state.puState} onChange={this.handleChange} />
+          		<input className="form-control" id="puState" type="text" value={this.state.puState} onChange={this.handleChange} required />
         	</label>
-        	<label>
+        	<label className="margin-left">
           		Zip Code:
-          		<input id="puZip" type="text" value={this.state.puZip} onChange={this.handleChange} />
+          		<input className="form-control" id="puZip" type="text" value={this.state.puZip} onChange={this.handleChange} required />
         	</label>
         	<h3> Delivery Info </h3>
-        	<label>
+        	<label className="margin-left">
           		City:
-          		<input id="dvCity" type="text" value={this.state.dvCity} onChange={this.handleChange} />
+          		<input className="form-control" id="dvCity" type="text" value={this.state.dvCity} onChange={this.handleChange} required />
         	</label>
-        	<label>
+        	<label className="margin-left">
           		State:
-          		<input id="dvState" type="text" value={this.state.dvState} onChange={this.handleChange} />
+          		<input className="form-control" id="dvState" type="text" value={this.state.dvState} onChange={this.handleChange} required />
         	</label>
-        	<label>
+        	<label className="margin-left">
           		Zip Code:
-          		<input id="dvZip" type="text" value={this.state.dvZip} onChange={this.handleChange} />
+          		<input className="form-control" id="dvZip" type="text" value={this.state.dvZip} onChange={this.handleChange} required />
         	</label>
         	<h3> Vehicle Info </h3>
-        	<label>
+        	<label className="margin-left">
           		Year:
-          		<input id="year" type="text" value={this.state.year} onChange={this.handleChange} />
+          		<input className="form-control" id="year" type="text" value={this.state.year} onChange={this.handleChange} required />
         	</label>
-        	<label>
+        	<label className="margin-left">
           		Make:
-          		<input id="make" type="text" value={this.state.make} onChange={this.handleChange} />
+          		<input className="form-control" id="make" type="text" value={this.state.make} onChange={this.handleChange} required />
         	</label>
-        	<label>
+        	<label className="margin-left">
           		Model:
-          		<input id="model" type="text" value={this.state.model} onChange={this.handleChange} />
+          		<input className="form-control" id="model" type="text" value={this.state.model} onChange={this.handleChange} required />
         	</label>
-        	<label>
+        	<label className="margin-left">
         		Running/Inop
-        		<input id="running" type="text" value={this.state.running} onChange={this.handleChange} />
+        		<input className="form-control" id="running" type="text" value={this.state.running} onChange={this.handleChange} required />
         	</label>
-        	<input type="submit" value="Submit" />
+        	<label className="margin-left full-width">
+          		Additional Information:
+          		<textarea className="form-control" id="info" rows="4" value={this.state.info} onChange={this.handleChange} />
+        	</label>
+        	<div className="center" >
+        		<input className="btn btn-default btn-lg" type="submit" value="Submit" />
+      		</div>
       	</form>
-    	);
+
+    	) 
   	}
 } 

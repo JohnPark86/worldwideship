@@ -11,6 +11,7 @@
 
 .navbar {
     height: 100px;
+    margin-bottom: 0;
 }
 
 .navbar-brand {
