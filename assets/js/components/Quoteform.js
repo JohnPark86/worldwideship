@@ -36,6 +36,34 @@ export default class QuoteForm extends React.Component {
 
   	handleSubmit(event) {
  		    event.preventDefault();
+
+        var data = {
+          name: this.state.name,
+          number: this.state.number,
+          email: this.state.email,
+          puCity: this.state.puCity,
+          puState: this.state.puState,
+          puZip: this.state.puZip,
+          dvCity: this.state.dvCity,
+          dvState: this.state.dvState,
+          dvZip: this.state.dvZip,
+          year: this.state.year,
+          make: this.state.make,
+          model: this.state.model,
+          running: this.state.running,
+          info: this.state.info
+        };
+
+        console.log(data);
+
+         $.ajax({
+           type: "POST",
+           url: "../../php/email.php",
+           data: data,
+           success: function(){
+             alert("success");
+           }
+         });
   	}
 
   	render() {
@@ -55,7 +83,7 @@ export default class QuoteForm extends React.Component {
                 }}
             >
                 
-        	  <form  ref="vForm" onSubmit={this.handleSubmit}>
+        	  <form ref="vForm" onSubmit={this.handleSubmit} action="send_form_email.php">
           		<h3> Your Info </h3>
             	<label className="margin-left">
               		Your Name:
