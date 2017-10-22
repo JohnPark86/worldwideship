@@ -15,6 +15,8 @@ if($_POST){
     $running = $_POST['running'];
     $info = $_POST['info'];
 
+    echo("cwd");
+
     $message = "Name: " . $name . "\r\n" .
     		"Phone Number: " . $number . "\r\n" .
     		"e-mail:" . $email . "\r\n" . 

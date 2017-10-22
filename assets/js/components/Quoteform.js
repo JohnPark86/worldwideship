@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import $ from 'jquery';
 import ValidateableForm from 'react-form-validate';
 import {} from '../../css/quoteform.css'
 
@@ -58,7 +59,7 @@ export default class QuoteForm extends React.Component {
 
          $.ajax({
            type: "POST",
-           url: "../../php/email.php",
+           url: "email.php",
            data: data,
            success: function(){
              alert("success");
@@ -83,7 +84,7 @@ export default class QuoteForm extends React.Component {
                 }}
             >
                 
-        	  <form ref="vForm" onSubmit={this.handleSubmit} action="send_form_email.php">
+        	  <form ref="vForm" onSubmit={this.handleSubmit}>
           		<h3> Your Info </h3>
             	<label className="margin-left">
               		Your Name:
