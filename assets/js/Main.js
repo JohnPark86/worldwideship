@@ -14,10 +14,10 @@ export default class Main extends React.Component{
 		return( 
 		 	<div className="bodyContainer">
 			    <Switch>
-			      <Route exact path='\/' component={Home}/>
-			      <Route path='\/services' component={Services}/>  
-			      <Route path='\/faq' component={FAQ}/>
-			      <Route path='\/quote' component={QuoteForm}/>
+			      <Route exact path='/' component={Home}/>
+			      <Route path='/services' component={Services}/>  
+			      <Route path='/faq' component={FAQ}/>
+			      <Route path='/quote' component={QuoteForm}/>
 			    </Switch>
   			</div>
   		)

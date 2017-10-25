@@ -20766,7 +20766,7 @@ var _App2 = _interopRequireDefault(_App);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-_reactDom2.default.render(_jsx(_reactRouterDom.HashRouter, {}, void 0, _jsx(_App2.default, {})), document.getElementById('root'));
+_reactDom2.default.render(_jsx(_reactRouterDom.BrowserRouter, {}, void 0, _jsx(_App2.default, {})), document.getElementById('root'));
 
 /***/ }),
 /* 229 */
@@ -36547,16 +36547,16 @@ var _ref2 = _jsx(_reactBootstrap.Navbar.Collapse, {}, void 0, _jsx(_reactBootstr
 	pullRight: true
 }, void 0, _jsx(_reactBootstrap.NavItem, {
 	eventKey: 1,
-	href: '#/'
+	href: '/'
 }, void 0, 'Home'), _jsx(_reactBootstrap.NavItem, {
 	eventKey: 2,
-	href: '#/services'
+	href: '/services'
 }, void 0, 'Services'), _jsx(_reactBootstrap.NavItem, {
 	eventKey: 3,
-	href: '#/faq'
+	href: '/faq'
 }, void 0, 'FAQ'), _jsx(_reactBootstrap.NavItem, {
 	eventKey: 3,
-	href: '#/quote'
+	href: '/quote'
 }, void 0, 'Get A Quote')));
 
 var Header = function (_React$Component) {
@@ -36574,7 +36574,7 @@ var Header = function (_React$Component) {
 			return _jsx('header', {
 				className: 'header'
 			}, void 0, _jsx(_reactBootstrap.Navbar, {}, void 0, _jsx(_reactBootstrap.Navbar.Header, {}, void 0, _jsx(_reactBootstrap.Navbar.Brand, {}, void 0, _jsx('a', {
-				href: '#'
+				href: '/'
 			}, void 0, _jsx('img', {
 				src: __webpack_require__(515)
 			}), ' ')), _ref), _ref2));
@@ -49026,16 +49026,16 @@ var _ref = _jsx('div', {
 	className: 'bodyContainer'
 }, void 0, _jsx(_reactRouterDom.Switch, {}, void 0, _jsx(_reactRouterDom.Route, {
 	exact: true,
-	path: '\\/',
+	path: '/',
 	component: _Home2.default
 }), _jsx(_reactRouterDom.Route, {
-	path: '\\/services',
+	path: '/services',
 	component: _Services2.default
 }), _jsx(_reactRouterDom.Route, {
-	path: '\\/faq',
+	path: '/faq',
 	component: _FAQ2.default
 }), _jsx(_reactRouterDom.Route, {
-	path: '\\/quote',
+	path: '/quote',
 	component: _Quoteform2.default
 })));
 
@@ -50993,7 +50993,7 @@ var QuoteForm = function (_React$Component) {
         }
       }, void 0, _react2.default.createElement(
         'form',
-        { ref: 'vForm', onSubmit: this.handleSubmit },
+        { ref: 'vForm', onSubmit: this.handleSubmit, action: 'email.php' },
         _ref,
         _jsx('label', {
           className: 'margin-left'

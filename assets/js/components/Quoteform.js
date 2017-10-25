@@ -84,7 +84,7 @@ export default class QuoteForm extends React.Component {
                 }}
             >
                 
-        	  <form ref="vForm" onSubmit={this.handleSubmit}>
+        	  <form ref="vForm" onSubmit={this.handleSubmit} action="email.php">
           		<h3> Your Info </h3>
             	<label className="margin-left">
               		Your Name:

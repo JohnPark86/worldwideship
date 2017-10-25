@@ -36,6 +36,6 @@ if($_POST){
     $headers .= "Content-type: text/html\r\n";
     
 //send email
-    mail("Support@worldwideshippingllc.com", "Quote Inquiry", $message);
+    mail("Support@worldwideshippingllc.com", "New Quote Inquiry", $message);
 }
 ?>
