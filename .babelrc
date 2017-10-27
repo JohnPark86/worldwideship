@@ -2,6 +2,7 @@
   "presets": [
     "env",
     "react",
+    "react-native",
     "stage-0"
   ],
   "plugins": [

@@ -1,6 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import $ from 'jquery';
+import {
+  Modal,
+  ModalHeader,
+  ModalTitle,
+  ModalClose,
+  ModalBody,
+  ModalFooter
+} from 'react-bootstrap';
 import ValidateableForm from 'react-form-validate';
 import {} from '../../css/quoteform.css'
 
@@ -10,6 +18,7 @@ export default class QuoteForm extends React.Component {
 	constructor(props) {
     	super(props);
     	this.state = {
+        isOpen: false,
     		name: '',
     		number: '',
     		email: '',
@@ -28,6 +37,19 @@ export default class QuoteForm extends React.Component {
     	this.handleChange = this.handleChange.bind(this);
     	this.handleSubmit = this.handleSubmit.bind(this);
   	}
+
+    openModal(){
+      this.setState({
+        isOpen: true
+      });
+    };
+   
+    hideModal(){
+      this.setState({
+        isOpen: false
+      });
+    };
+
 
   	handleChange(event) {
     	var change = {}
@@ -55,20 +77,21 @@ export default class QuoteForm extends React.Component {
           info: this.state.info
         };
 
-        console.log(data);
-
+     
          $.ajax({
            type: "POST",
            url: "email.php",
            data: data,
-           success: function(){
-             alert("success");
+           success: function(data){
+            console.log(data);
+            { this.openModal };
            }
          });
   	}
 
   	render() {
         return (
+          <div>
             <ValidateableForm  
                 onSubmit={this.console}
                 rules={{
@@ -77,14 +100,12 @@ export default class QuoteForm extends React.Component {
                   },
                   phoneNumber: {
                       phoneNum (value){
-                        console.log(value);
                         return value.match( /^(\+?1-?)?(\([2-9]([02-9]\d|1[02-9])\)|[2-9]([02-9]\d|1[02-9]))-?[2-9]([02-9]\d|1[02-9])-?\d{4}$/ );
                       }
                   }
                 }}
             >
-                
-        	  <form ref="vForm" onSubmit={this.handleSubmit} action="email.php">
+        	  <form ref="vForm" onSubmit={this.handleSubmit}>
           		<h3> Your Info </h3>
             	<label className="margin-left">
               		Your Name:
@@ -150,6 +171,27 @@ export default class QuoteForm extends React.Component {
           		</div>
             </form>
         </ValidateableForm>
+        <Modal isOpen={this.state.isOpen} onRequestHide={this.hideModal}>
+          <ModalHeader>
+            <ModalClose onClick={this.hideModal}/>
+            <ModalTitle>Modal title</ModalTitle>
+          </ModalHeader>
+          <ModalBody>
+            <p>Ab ea ipsam iure perferendis! Ad debitis dolore excepturi
+              explicabo hic incidunt placeat quasi repellendus soluta,
+              vero. Autem delectus est laborum minus modi molestias
+              natus provident, quidem rerum sint, voluptas!</p>
+          </ModalBody>
+          <ModalFooter>
+            <button className='btn btn-default' onClick={this.hideModal}>
+              Close
+            </button>
+            <button className='btn btn-primary'>
+              Save changes
+            </button>
+          </ModalFooter>
+        </Modal>
+      </div>
     	) 
   	}
 } 

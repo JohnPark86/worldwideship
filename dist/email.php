@@ -15,8 +15,6 @@ if($_POST){
     $running = $_POST['running'];
     $info = $_POST['info'];
 
-    echo("cwd");
-
     $message = "Name: " . $name . "\r\n" .
     		"Phone Number: " . $number . "\r\n" .
     		"e-mail:" . $email . "\r\n" . 
@@ -29,13 +27,19 @@ if($_POST){
     		"Year: " . $year . "\r\n" .
     		"Make: " . $make . "\r\n" .
     		"Model: " . $model . "\r\n" .
-    		"Running/Inop: " . $ . "\r\n" .
+    		"Running/Inop: " . $running . "\r\n" .
     		"Additional Information: " . $info;
 
     $headers = "From worldwideshippingllc Website \r\n";
     $headers .= "Content-type: text/html\r\n";
     
 //send email
-    mail("Support@worldwideshippingllc.com", "New Quote Inquiry", $message);
+    $retVal = mail("Support@worldwideshippingllc.com", "New Quote Inquiry", $message, $headers);
+
+    if( $retVal == true ) {
+            echo "Your message sent successfully. We will contact you soon!";
+         }else {
+            echo "Your message could not be sent. Please try again later or call us!";
+         }
 }
 ?>
