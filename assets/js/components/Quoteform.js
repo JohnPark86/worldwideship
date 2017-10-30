@@ -1,24 +1,29 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import Modal from 'react-modal';
 import $ from 'jquery';
-import {
-  Modal,
-  ModalHeader,
-  ModalTitle,
-  ModalClose,
-  ModalBody,
-  ModalFooter
-} from 'react-bootstrap';
 import ValidateableForm from 'react-form-validate';
 import {} from '../../css/quoteform.css'
 
+
+const customStyles = {
+  content : {
+    top                   : '50%',
+    left                  : '50%',
+    right                 : 'auto',
+    bottom                : 'auto',
+    marginRight           : '-50%',
+    transform             : 'translate(-50%, -50%)'
+  }
+};
 
 export default class QuoteForm extends React.Component {
 
 	constructor(props) {
     	super(props);
     	this.state = {
-        isOpen: false,
+        response: '',
+        modalIsOpen: false,
     		name: '',
     		number: '',
     		email: '',
@@ -36,64 +41,68 @@ export default class QuoteForm extends React.Component {
     	};
     	this.handleChange = this.handleChange.bind(this);
     	this.handleSubmit = this.handleSubmit.bind(this);
+      this.openModal = this.openModal.bind(this);
+      this.closeModal = this.closeModal.bind(this);
   	}
 
-    openModal(){
-      this.setState({
-        isOpen: true
-      });
-    };
+    openModal() {
+      this.setState({modalIsOpen: true});
+    }
    
-    hideModal(){
-      this.setState({
-        isOpen: false
-      });
-    };
+    closeModal() {
+      this.setState({modalIsOpen: false});
+    }
 
-
-  	handleChange(event) {
-    	var change = {}
+    handleChange(event) {
+      var change = {}
     	change[event.target.id] = event.target.value
     	this.setState(change)
   	}
 
   	handleSubmit(event) {
- 		    event.preventDefault();
+	    event.preventDefault();
 
-        var data = {
-          name: this.state.name,
-          number: this.state.number,
-          email: this.state.email,
-          puCity: this.state.puCity,
-          puState: this.state.puState,
-          puZip: this.state.puZip,
-          dvCity: this.state.dvCity,
-          dvState: this.state.dvState,
-          dvZip: this.state.dvZip,
-          year: this.state.year,
-          make: this.state.make,
-          model: this.state.model,
-          running: this.state.running,
-          info: this.state.info
-        };
+      var data = {
+        name: this.state.name,
+        number: this.state.number,
+        email: this.state.email,
+        puCity: this.state.puCity,
+        puState: this.state.puState,
+        puZip: this.state.puZip,
+        dvCity: this.state.dvCity,
+        dvState: this.state.dvState,
+        dvZip: this.state.dvZip,
+        year: this.state.year,
+        make: this.state.make,
+        model: this.state.model,
+        running: this.state.running,
+        info: this.state.info
+      };
 
-     
-         $.ajax({
-           type: "POST",
-           url: "email.php",
-           data: data,
-           success: function(data){
-            console.log(data);
-            { this.openModal };
-           }
-         });
+   
+       $.ajax({
+         type: "POST",
+         url: "email.php",
+         data: data,
+         success:(data) => {
+          this.setState({response: data});
+          { this.openModal() };
+         }
+       });
   	}
 
   	render() {
         return (
           <div>
+             <Modal
+                isOpen={ this.state.modalIsOpen }
+                onRequestClose={ this.closeModal }
+                style={ customStyles }
+              >
+                <div>{ this.state.response }</div>
+                <button onClick={this.closeModal}>close</button>
+              </Modal>
             <ValidateableForm  
-                onSubmit={this.console}
                 rules={{
                   email: {
                       email: true
@@ -171,26 +180,6 @@ export default class QuoteForm extends React.Component {
           		</div>
             </form>
         </ValidateableForm>
-        <Modal isOpen={this.state.isOpen} onRequestHide={this.hideModal}>
-          <ModalHeader>
-            <ModalClose onClick={this.hideModal}/>
-            <ModalTitle>Modal title</ModalTitle>
-          </ModalHeader>
-          <ModalBody>
-            <p>Ab ea ipsam iure perferendis! Ad debitis dolore excepturi
-              explicabo hic incidunt placeat quasi repellendus soluta,
-              vero. Autem delectus est laborum minus modi molestias
-              natus provident, quidem rerum sint, voluptas!</p>
-          </ModalBody>
-          <ModalFooter>
-            <button className='btn btn-default' onClick={this.hideModal}>
-              Close
-            </button>
-            <button className='btn btn-primary'>
-              Save changes
-            </button>
-          </ModalFooter>
-        </Modal>
       </div>
     	) 
   	}

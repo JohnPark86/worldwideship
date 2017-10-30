@@ -12,6 +12,7 @@ module.exports = {
     historyApiFallback: true,
     port: 9000
   },
+  devtool: 'source-map',
   module: {
     rules: [
       {
@@ -20,7 +21,7 @@ module.exports = {
           {
             loader: "babel-loader",
           }
-        ],
+        ]
       },
       {
         test: /\.css$/,
