@@ -37,9 +37,9 @@ if($_POST){
     $retVal = mail("Support@worldwideshippingllc.com", "New Quote Inquiry", $message, $headers);
 
     if( $retVal == true ) {
-            echo "Your message sent successfully. We will contact you soon!";
+            echo "Your message has been sent successfully. \r\n We will contact you soon with a quote!";
          }else {
-            echo "Your message could not be sent. Please try again later or call us!";
+            echo "Your message could not be sent at this time. \r\n Please try again later or call us!";
          }
 }
 ?>

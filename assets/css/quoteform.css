@@ -16,3 +16,12 @@ form {
 .center {
 	text-align: center;
 }
+
+.responseText {
+	font-size: 24px;
+	padding: 20px;
+}
+
+.ReactModal__Overlay {
+	background-color: rgba(0, 0, 0, 0.75) !important;
+}

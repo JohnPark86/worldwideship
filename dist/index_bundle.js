@@ -51050,7 +51050,7 @@ exports.push([module.i, ".question {\n\ttext-decoration: underline;\n\tfont-weig
 
 
 Object.defineProperty(exports, "__esModule", {
-  value: true
+    value: true
 });
 
 var _jsx = function () { var REACT_ELEMENT_TYPE = typeof Symbol === "function" && Symbol.for && Symbol.for("react.element") || 0xeac7; return function createRawReactElement(type, props, key, children) { var defaultProps = type && type.defaultProps; var childrenLength = arguments.length - 3; if (!props && childrenLength !== 0) { props = {}; } if (props && defaultProps) { for (var propName in defaultProps) { if (props[propName] === void 0) { props[propName] = defaultProps[propName]; } } } else if (!props) { props = defaultProps || {}; } if (childrenLength === 1) { props.children = children; } else if (childrenLength > 1) { var childArray = Array(childrenLength); for (var i = 0; i < childrenLength; i++) { childArray[i] = arguments[i + 3]; } props.children = childArray; } return { $$typeof: REACT_ELEMENT_TYPE, type: type, key: key === undefined ? null : '' + key, ref: null, props: props, _owner: null }; }; }();
@@ -51088,14 +51088,19 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
 var customStyles = {
-  content: {
-    top: '50%',
-    left: '50%',
-    right: 'auto',
-    bottom: 'auto',
-    marginRight: '-50%',
-    transform: 'translate(-50%, -50%)'
-  }
+    content: {
+        width: '575px',
+        top: '50%',
+        left: '50%',
+        right: 'auto',
+        bottom: 'auto',
+        marginRight: '-50%',
+        transform: 'translate(-50%, -50%)',
+        textAlign: 'center',
+        border: '1px solid black',
+        borderRadius: '20px',
+        backgroundColor: '#f8f8f8'
+    }
 };
 
 var _ref = _jsx('h3', {}, void 0, ' Your Info ');
@@ -51107,286 +51112,289 @@ var _ref3 = _jsx('h3', {}, void 0, ' Delivery Info ');
 var _ref4 = _jsx('h3', {}, void 0, ' Vehicle Info ');
 
 var _ref5 = _jsx('div', {
-  className: 'center'
+    className: 'center'
 }, void 0, _jsx('input', {
-  className: 'btn btn-default btn-lg',
-  type: 'submit',
-  value: 'Submit'
+    className: 'btn btn-default btn-lg',
+    type: 'submit',
+    value: 'Submit'
 }));
 
 var QuoteForm = function (_React$Component) {
-  _inherits(QuoteForm, _React$Component);
+    _inherits(QuoteForm, _React$Component);
 
-  function QuoteForm(props) {
-    _classCallCheck(this, QuoteForm);
+    function QuoteForm(props) {
+        _classCallCheck(this, QuoteForm);
 
-    var _this = _possibleConstructorReturn(this, (QuoteForm.__proto__ || Object.getPrototypeOf(QuoteForm)).call(this, props));
+        var _this = _possibleConstructorReturn(this, (QuoteForm.__proto__ || Object.getPrototypeOf(QuoteForm)).call(this, props));
 
-    _this.state = {
-      response: '',
-      modalIsOpen: false,
-      name: '',
-      number: '',
-      email: '',
-      puCity: '',
-      puState: '',
-      puZip: '',
-      dvCity: '',
-      dvState: '',
-      dvZip: '',
-      year: '',
-      make: '',
-      model: '',
-      running: '',
-      info: ''
-    };
-    _this.handleChange = _this.handleChange.bind(_this);
-    _this.handleSubmit = _this.handleSubmit.bind(_this);
-    _this.openModal = _this.openModal.bind(_this);
-    _this.closeModal = _this.closeModal.bind(_this);
-    return _this;
-  }
-
-  _createClass(QuoteForm, [{
-    key: 'openModal',
-    value: function openModal() {
-      this.setState({ modalIsOpen: true });
+        _this.state = {
+            response: '',
+            modalIsOpen: false,
+            name: '',
+            number: '',
+            email: '',
+            puCity: '',
+            puState: '',
+            puZip: '',
+            dvCity: '',
+            dvState: '',
+            dvZip: '',
+            year: '',
+            make: '',
+            model: '',
+            running: '',
+            info: ''
+        };
+        _this.handleChange = _this.handleChange.bind(_this);
+        _this.handleSubmit = _this.handleSubmit.bind(_this);
+        _this.openModal = _this.openModal.bind(_this);
+        _this.closeModal = _this.closeModal.bind(_this);
+        return _this;
     }
-  }, {
-    key: 'closeModal',
-    value: function closeModal() {
-      this.setState({ modalIsOpen: false });
-    }
-  }, {
-    key: 'handleChange',
-    value: function handleChange(event) {
-      var change = {};
-      change[event.target.id] = event.target.value;
-      this.setState(change);
-    }
-  }, {
-    key: 'handleSubmit',
-    value: function handleSubmit(event) {
-      var _this2 = this;
 
-      event.preventDefault();
-
-      var data = {
-        name: this.state.name,
-        number: this.state.number,
-        email: this.state.email,
-        puCity: this.state.puCity,
-        puState: this.state.puState,
-        puZip: this.state.puZip,
-        dvCity: this.state.dvCity,
-        dvState: this.state.dvState,
-        dvZip: this.state.dvZip,
-        year: this.state.year,
-        make: this.state.make,
-        model: this.state.model,
-        running: this.state.running,
-        info: this.state.info
-      };
-
-      _jquery2.default.ajax({
-        type: "POST",
-        url: "email.php",
-        data: data,
-        success: function success(data) {
-          _this2.setState({ response: data });
-          {
-            _this2.openModal();
-          };
+    _createClass(QuoteForm, [{
+        key: 'openModal',
+        value: function openModal() {
+            this.setState({ modalIsOpen: true });
         }
-      });
-    }
-  }, {
-    key: 'render',
-    value: function render() {
-      return _jsx('div', {}, void 0, _jsx(_reactModal2.default, {
-        isOpen: this.state.modalIsOpen,
-        onRequestClose: this.closeModal,
-        style: customStyles
-      }, void 0, _jsx('div', {}, void 0, this.state.response), _jsx('button', {
-        onClick: this.closeModal
-      }, void 0, 'close')), _jsx(_reactFormValidate2.default, {
-        rules: {
-          email: {
-            email: true
-          },
-          phoneNumber: {
-            phoneNum: function phoneNum(value) {
-              return value.match(/^(\+?1-?)?(\([2-9]([02-9]\d|1[02-9])\)|[2-9]([02-9]\d|1[02-9]))-?[2-9]([02-9]\d|1[02-9])-?\d{4}$/);
-            }
-          }
+    }, {
+        key: 'closeModal',
+        value: function closeModal() {
+            this.setState({ modalIsOpen: false });
         }
-      }, void 0, _react2.default.createElement(
-        'form',
-        { ref: 'vForm', onSubmit: this.handleSubmit },
-        _ref,
-        _jsx('label', {
-          className: 'margin-left'
-        }, void 0, 'Your Name:', _jsx('input', {
-          name: 'name',
-          className: 'form-control',
-          id: 'name',
-          type: 'text',
-          value: this.state.name,
-          onChange: this.handleChange,
-          required: true
-        })),
-        _jsx('label', {
-          className: 'margin-left'
-        }, void 0, 'Your Phone Number:', _jsx('input', {
-          placeholder: 'xxx-xxx-xxxx',
-          name: 'phoneNumber',
-          className: 'form-control',
-          id: 'number',
-          type: 'text',
-          value: this.state.number,
-          onChange: this.handleChange,
-          required: true
-        })),
-        _jsx('label', {
-          className: 'margin-left'
-        }, void 0, 'Your Email:', _jsx('input', {
-          name: 'email',
-          className: 'form-control',
-          id: 'email',
-          type: 'text',
-          value: this.state.email,
-          onChange: this.handleChange,
-          required: true
-        })),
-        _ref2,
-        _jsx('label', {
-          className: 'margin-left'
-        }, void 0, 'City:', _jsx('input', {
-          name: 'puCity',
-          className: 'form-control',
-          id: 'puCity',
-          type: 'text',
-          value: this.state.puCity,
-          onChange: this.handleChange,
-          required: true
-        })),
-        _jsx('label', {
-          className: 'margin-left'
-        }, void 0, 'State:', _jsx('input', {
-          name: 'puState',
-          className: 'form-control',
-          id: 'puState',
-          type: 'text',
-          value: this.state.puState,
-          onChange: this.handleChange,
-          required: true
-        })),
-        _jsx('label', {
-          className: 'margin-left'
-        }, void 0, 'Zip Code:', _jsx('input', {
-          name: 'puZip',
-          className: 'form-control',
-          id: 'puZip',
-          type: 'text',
-          value: this.state.puZip,
-          onChange: this.handleChange,
-          required: true
-        })),
-        _ref3,
-        _jsx('label', {
-          className: 'margin-left'
-        }, void 0, 'City:', _jsx('input', {
-          name: 'dvCity',
-          className: 'form-control',
-          id: 'dvCity',
-          type: 'text',
-          value: this.state.dvCity,
-          onChange: this.handleChange,
-          required: true
-        })),
-        _jsx('label', {
-          className: 'margin-left'
-        }, void 0, 'State:', _jsx('input', {
-          name: 'dvState',
-          className: 'form-control',
-          id: 'dvState',
-          type: 'text',
-          value: this.state.dvState,
-          onChange: this.handleChange,
-          required: true
-        })),
-        _jsx('label', {
-          className: 'margin-left'
-        }, void 0, 'Zip Code:', _jsx('input', {
-          name: 'dvZip',
-          className: 'form-control',
-          id: 'dvZip',
-          type: 'text',
-          value: this.state.dvZip,
-          onChange: this.handleChange,
-          required: true
-        })),
-        _ref4,
-        _jsx('label', {
-          className: 'margin-left'
-        }, void 0, 'Year:', _jsx('input', {
-          name: 'year',
-          className: 'form-control',
-          id: 'year',
-          type: 'text',
-          value: this.state.year,
-          onChange: this.handleChange,
-          required: true
-        })),
-        _jsx('label', {
-          className: 'margin-left'
-        }, void 0, 'Make:', _jsx('input', {
-          name: 'make',
-          className: 'form-control',
-          id: 'make',
-          type: 'text',
-          value: this.state.make,
-          onChange: this.handleChange,
-          required: true
-        })),
-        _jsx('label', {
-          className: 'margin-left'
-        }, void 0, 'Model:', _jsx('input', {
-          name: 'model',
-          className: 'form-control',
-          id: 'model',
-          type: 'text',
-          value: this.state.model,
-          onChange: this.handleChange,
-          required: true
-        })),
-        _jsx('label', {
-          className: 'margin-left'
-        }, void 0, 'Running/Inop', _jsx('input', {
-          name: 'running',
-          className: 'form-control',
-          id: 'running',
-          type: 'text',
-          value: this.state.running,
-          onChange: this.handleChange,
-          required: true
-        })),
-        _jsx('label', {
-          className: 'margin-left full-width'
-        }, void 0, 'Additional Information:', _jsx('textarea', {
-          name: 'info',
-          className: 'form-control',
-          id: 'info',
-          rows: '4',
-          value: this.state.info,
-          onChange: this.handleChange
-        })),
-        _ref5
-      )));
-    }
-  }]);
+    }, {
+        key: 'handleChange',
+        value: function handleChange(event) {
+            var change = {};
+            change[event.target.id] = event.target.value;
+            this.setState(change);
+        }
+    }, {
+        key: 'handleSubmit',
+        value: function handleSubmit(event) {
+            var _this2 = this;
 
-  return QuoteForm;
+            event.preventDefault();
+
+            var data = {
+                name: this.state.name,
+                number: this.state.number,
+                email: this.state.email,
+                puCity: this.state.puCity,
+                puState: this.state.puState,
+                puZip: this.state.puZip,
+                dvCity: this.state.dvCity,
+                dvState: this.state.dvState,
+                dvZip: this.state.dvZip,
+                year: this.state.year,
+                make: this.state.make,
+                model: this.state.model,
+                running: this.state.running,
+                info: this.state.info
+            };
+
+            _jquery2.default.ajax({
+                type: "POST",
+                url: "email.php",
+                data: data,
+                success: function success(response) {
+                    _this2.setState({ response: response });
+                    {
+                        _this2.openModal();
+                    };
+                }
+            });
+        }
+    }, {
+        key: 'render',
+        value: function render() {
+            return _jsx('div', {}, void 0, _jsx(_reactModal2.default, {
+                isOpen: this.state.modalIsOpen,
+                onRequestClose: this.closeModal,
+                style: customStyles
+            }, void 0, _jsx('div', {
+                className: 'responseText'
+            }, void 0, this.state.response), _jsx('button', {
+                className: 'btn btn-default btn-lg modalButton',
+                onClick: this.closeModal
+            }, void 0, 'close')), _jsx(_reactFormValidate2.default, {
+                rules: {
+                    email: {
+                        email: true
+                    },
+                    phoneNumber: {
+                        phoneNum: function phoneNum(value) {
+                            return value.match(/^(\+?1-?)?(\([2-9]([02-9]\d|1[02-9])\)|[2-9]([02-9]\d|1[02-9]))-?[2-9]([02-9]\d|1[02-9])-?\d{4}$/);
+                        }
+                    }
+                }
+            }, void 0, _react2.default.createElement(
+                'form',
+                { ref: 'vForm', onSubmit: this.handleSubmit },
+                _ref,
+                _jsx('label', {
+                    className: 'margin-left'
+                }, void 0, 'Your Name:', _jsx('input', {
+                    name: 'name',
+                    className: 'form-control',
+                    id: 'name',
+                    type: 'text',
+                    value: this.state.name,
+                    onChange: this.handleChange,
+                    required: true
+                })),
+                _jsx('label', {
+                    className: 'margin-left'
+                }, void 0, 'Your Phone Number:', _jsx('input', {
+                    placeholder: 'xxx-xxx-xxxx',
+                    name: 'phoneNumber',
+                    className: 'form-control',
+                    id: 'number',
+                    type: 'text',
+                    value: this.state.number,
+                    onChange: this.handleChange,
+                    required: true
+                })),
+                _jsx('label', {
+                    className: 'margin-left'
+                }, void 0, 'Your Email:', _jsx('input', {
+                    name: 'email',
+                    className: 'form-control',
+                    id: 'email',
+                    type: 'text',
+                    value: this.state.email,
+                    onChange: this.handleChange,
+                    required: true
+                })),
+                _ref2,
+                _jsx('label', {
+                    className: 'margin-left'
+                }, void 0, 'City:', _jsx('input', {
+                    name: 'puCity',
+                    className: 'form-control',
+                    id: 'puCity',
+                    type: 'text',
+                    value: this.state.puCity,
+                    onChange: this.handleChange,
+                    required: true
+                })),
+                _jsx('label', {
+                    className: 'margin-left'
+                }, void 0, 'State:', _jsx('input', {
+                    name: 'puState',
+                    className: 'form-control',
+                    id: 'puState',
+                    type: 'text',
+                    value: this.state.puState,
+                    onChange: this.handleChange,
+                    required: true
+                })),
+                _jsx('label', {
+                    className: 'margin-left'
+                }, void 0, 'Zip Code:', _jsx('input', {
+                    name: 'puZip',
+                    className: 'form-control',
+                    id: 'puZip',
+                    type: 'text',
+                    value: this.state.puZip,
+                    onChange: this.handleChange,
+                    required: true
+                })),
+                _ref3,
+                _jsx('label', {
+                    className: 'margin-left'
+                }, void 0, 'City:', _jsx('input', {
+                    name: 'dvCity',
+                    className: 'form-control',
+                    id: 'dvCity',
+                    type: 'text',
+                    value: this.state.dvCity,
+                    onChange: this.handleChange,
+                    required: true
+                })),
+                _jsx('label', {
+                    className: 'margin-left'
+                }, void 0, 'State:', _jsx('input', {
+                    name: 'dvState',
+                    className: 'form-control',
+                    id: 'dvState',
+                    type: 'text',
+                    value: this.state.dvState,
+                    onChange: this.handleChange,
+                    required: true
+                })),
+                _jsx('label', {
+                    className: 'margin-left'
+                }, void 0, 'Zip Code:', _jsx('input', {
+                    name: 'dvZip',
+                    className: 'form-control',
+                    id: 'dvZip',
+                    type: 'text',
+                    value: this.state.dvZip,
+                    onChange: this.handleChange,
+                    required: true
+                })),
+                _ref4,
+                _jsx('label', {
+                    className: 'margin-left'
+                }, void 0, 'Year:', _jsx('input', {
+                    name: 'year',
+                    className: 'form-control',
+                    id: 'year',
+                    type: 'text',
+                    value: this.state.year,
+                    onChange: this.handleChange,
+                    required: true
+                })),
+                _jsx('label', {
+                    className: 'margin-left'
+                }, void 0, 'Make:', _jsx('input', {
+                    name: 'make',
+                    className: 'form-control',
+                    id: 'make',
+                    type: 'text',
+                    value: this.state.make,
+                    onChange: this.handleChange,
+                    required: true
+                })),
+                _jsx('label', {
+                    className: 'margin-left'
+                }, void 0, 'Model:', _jsx('input', {
+                    name: 'model',
+                    className: 'form-control',
+                    id: 'model',
+                    type: 'text',
+                    value: this.state.model,
+                    onChange: this.handleChange,
+                    required: true
+                })),
+                _jsx('label', {
+                    className: 'margin-left'
+                }, void 0, 'Running/Inop', _jsx('input', {
+                    name: 'running',
+                    className: 'form-control',
+                    id: 'running',
+                    type: 'text',
+                    value: this.state.running,
+                    onChange: this.handleChange,
+                    required: true
+                })),
+                _jsx('label', {
+                    className: 'margin-left full-width'
+                }, void 0, 'Additional Information:', _jsx('textarea', {
+                    name: 'info',
+                    className: 'form-control',
+                    id: 'info',
+                    rows: '4',
+                    value: this.state.info,
+                    onChange: this.handleChange
+                })),
+                _ref5
+            )));
+        }
+    }]);
+
+    return QuoteForm;
 }(_react2.default.Component);
 
 exports.default = QuoteForm;
@@ -62673,7 +62681,7 @@ exports = module.exports = __webpack_require__(28)(undefined);
 
 
 // module
-exports.push([module.i, "form {\n\tborder-radius: 25px;\n\tbackground-color: #f8f8f8;\n\tborder: 2px solid #e7e7e7;\n\tpadding: 1%;\n}\n\n.margin-left {\n\tmargin-left: 5%;\n}\n\n.full-width {\n    min-width: 80%;\n}\n\n.center {\n\ttext-align: center;\n}", ""]);
+exports.push([module.i, "form {\n\tborder-radius: 25px;\n\tbackground-color: #f8f8f8;\n\tborder: 2px solid #e7e7e7;\n\tpadding: 1%;\n}\n\n.margin-left {\n\tmargin-left: 5%;\n}\n\n.full-width {\n    min-width: 80%;\n}\n\n.center {\n\ttext-align: center;\n}\n\n.responseText {\n\tfont-size: 24px;\n\tpadding: 20px;\n}\n\n.ReactModal__Overlay {\n\tbackground-color: rgba(0, 0, 0, 0.75) !important;\n}", ""]);
 
 // exports
 
