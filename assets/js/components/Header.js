@@ -18,9 +18,9 @@ export default class Header extends React.Component {
 					    <Navbar.Collapse>
 					      <Nav pullRight>
 					        <NavItem eventKey={1} href="/">Home</NavItem>
-					        <NavItem eventKey={2} href="/services">Services</NavItem>
-					        <NavItem eventKey={3} href="/faq">FAQ</NavItem>
-					        <NavItem eventKey={3} href="/quote">Get A Quote</NavItem>
+					        <NavItem eventKey={2} href="#/services">Services</NavItem>
+					        <NavItem eventKey={3} href="#/faq">FAQ</NavItem>
+					        <NavItem eventKey={3} href="#/quote">Get A Quote</NavItem>
 					      </Nav>
 					    </Navbar.Collapse>
 					  </Navbar>

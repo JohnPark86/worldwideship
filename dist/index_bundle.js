@@ -20963,7 +20963,7 @@ var _App2 = _interopRequireDefault(_App);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-_reactDom2.default.render(_jsx(_reactRouterDom.BrowserRouter, {}, void 0, _jsx(_App2.default, {})), document.getElementById('root'));
+_reactDom2.default.render(_jsx(_reactRouterDom.HashRouter, {}, void 0, _jsx(_App2.default, {})), document.getElementById('root'));
 
 /***/ }),
 /* 233 */
@@ -36747,13 +36747,13 @@ var _ref2 = _jsx(_reactBootstrap.Navbar.Collapse, {}, void 0, _jsx(_reactBootstr
 	href: '/'
 }, void 0, 'Home'), _jsx(_reactBootstrap.NavItem, {
 	eventKey: 2,
-	href: '/services'
+	href: '#/services'
 }, void 0, 'Services'), _jsx(_reactBootstrap.NavItem, {
 	eventKey: 3,
-	href: '/faq'
+	href: '#/faq'
 }, void 0, 'FAQ'), _jsx(_reactBootstrap.NavItem, {
 	eventKey: 3,
-	href: '/quote'
+	href: '#/quote'
 }, void 0, 'Get A Quote')));
 
 var Header = function (_React$Component) {
@@ -49010,7 +49010,7 @@ exports = module.exports = __webpack_require__(28)(undefined);
 
 
 // module
-exports.push([module.i, ".header {\n\ttext-align: center;\n    position: fixed;\n    left: 0;\n    top: 0;\n    width: 100%;\n    background-color: #ffffff;\n    z-index: 1;\n    margin-bottom: 10px;\n}\n\n.navbar {\n    height: 100px;\n    margin-bottom: 0;\n}\n\n.navbar-brand {\n  display: flex;\n  align-items: center;\n}\n\n.navbar-brand a {\n    font-size: 24px;\n    text-decoration: underline;\n}\n\n.navbar-brand>img {\n    padding: 25px 0px 0px 0px;\n    width: 50%;\n    margin-top: 11%;\n}\n\n.navbar-default .navbar-collapse, .navbar-default .navbar-form {\n    background-color: #f8f8f8;\n}\n\n.navbar-collapse.in {\n    border-bottom: 2px solid;\n}\n\n.navbar-right {\n    font-size: 28px;\n}", ""]);
+exports.push([module.i, ".header {\n\ttext-align: center;\n    position: fixed;\n    left: 0;\n    top: 0;\n    width: 100%;\n    background-color: #ffffff;\n    z-index: 1;\n    margin-bottom: 10px;\n}\n\n.navbar {\n    height: 100px;\n    margin-bottom: 0;\n}\n\n.navbar-brand {\n  display: flex;\n  align-items: center;\n}\n\n.navbar-brand a {\n    font-size: 24px;\n    text-decoration: underline;\n}\n\n.navbar-brand>img {\n    padding: 25px 0px 0px 0px;\n    width: 50%;\n    margin-top: 11%;\n}\n\n.navbar-default .navbar-collapse, .navbar-default .navbar-form {\n    background-color: #f8f8f8;\n}\n\n.navbar-collapse {\n    margin-top: 48px;\n}\n\n.navbar-collapse.in {\n    border-bottom: 2px solid;\n}\n\n.navbar-right {\n    font-size: 28px;\n}", ""]);
 
 // exports
 
@@ -49358,7 +49358,7 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 
 var _ref = _jsx('h1', {
 	className: 'slogan'
-}, void 0, 'Whatever you need. Wherever you need it.');
+}, void 0, 'WHATEVER YOU NEED. WHENEVER YOU NEED IT.');
 
 var ImageCarousel = function (_React$Component) {
 	_inherits(ImageCarousel, _React$Component);
@@ -50392,7 +50392,7 @@ exports = module.exports = __webpack_require__(28)(undefined);
 
 
 // module
-exports.push([module.i, "p {\n\ttext-align: center;\n\tline-height: 25px;\n\tfont-size: 16px;\n\n}\n\nul {\n\tlist-style-position: inside;\n}\n\n.bold {\n\tfont-weight: bold;\n\ttext-align: center;\n}\n\n.homeTextPadding {\n\tpadding-top: 2%;\n}\n\n\n", ""]);
+exports.push([module.i, "p {\n\ttext-align: center;\n\tline-height: 25px;\n\tfont-size: 16px;\n\n}\n\n@media only screen and (max-width: 450px) {\n\n\tp {\n\t\tfont-size: 18px;\n\t}\n}\n\nul {\n\tlist-style-position: inside;\n}\n\n.bold {\n\tfont-weight: bold;\n\ttext-align: center;\n}\n\n.homeTextPadding {\n\tpadding-top: 2%;\n}\n\n\n", ""]);
 
 // exports
 
@@ -50567,7 +50567,7 @@ exports = module.exports = __webpack_require__(28)(undefined);
 
 
 // module
-exports.push([module.i, ".bodyContainer {\n\tpadding: 10% 50px 25px 50px;\n}\n\n\n@media only screen and (max-width: 1200px) {\n    .bodyContainer {\n        padding: 15% 50px 25px 50px;\n   }\n}\n\n@media only screen and (max-width: 750px) {\n    .bodyContainer {\n        padding: 20% 50px 25px 50px;\n   }\n}\n\n@media only screen and (max-width: 550px) {\n    .bodyContainer {\n        padding: 30% 50px 25px 50px;\n    }\n}\n\n.content {\n\tdisplay: inline-block;\n\tpadding: 5px 0;\n}\n\n.image-left {\n\tfloat: left;\n}\n\n.image-right {\n\tfloat: right;\n}\n\n.serviceText {\n\tline-height: 25px;\n}", ""]);
+exports.push([module.i, ".bodyContainer {\n\tpadding: 10% 50px 25px 50px;\n}\n\n\n@media only screen and (max-width: 1200px) {\n    .bodyContainer {\n        padding: 15% 50px 25px 50px;\n   }\n}\n\n@media only screen and (max-width: 750px) {\n    .bodyContainer {\n        padding: 20% 40px 25px 50px;\n   }\n}\n\n@media only screen and (max-width: 550px) {\n    .bodyContainer {\n        padding: 30% 40px 25px 50px;\n    }\n}\n\n.content {\n\tdisplay: inline-block;\n\tpadding: 5px 0;\n}\n\n.image-left {\n\tfloat: left;\n}\n\n.image-right {\n\tfloat: right;\n}\n\n.serviceText {\n\tline-height: 25px;\n}", ""]);
 
 // exports
 

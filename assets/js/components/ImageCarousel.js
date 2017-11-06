@@ -8,7 +8,7 @@ export default class ImageCarousel extends React.Component {
 	render(){
 		return(
 			<div>
-				<h1 className="slogan">Whatever you need. Wherever you need it.</h1> 
+				<h1 className="slogan">WHATEVER YOU NEED. WHENEVER YOU NEED IT.</h1> 
 				<div className="centerCarousel">   
 					<Carousel showThumbs={false}>
 						<div>

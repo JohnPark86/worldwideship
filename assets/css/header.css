@@ -34,6 +34,10 @@
     background-color: #f8f8f8;
 }
 
+.navbar-collapse {
+    margin-top: 48px;
+}
+
 .navbar-collapse.in {
     border-bottom: 2px solid;
 }

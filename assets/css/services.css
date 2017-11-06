@@ -11,13 +11,13 @@
 
 @media only screen and (max-width: 750px) {
     .bodyContainer {
-        padding: 20% 50px 25px 50px;
+        padding: 20% 40px 25px 50px;
    }
 }
 
 @media only screen and (max-width: 550px) {
     .bodyContainer {
-        padding: 30% 50px 25px 50px;
+        padding: 30% 40px 25px 50px;
     }
 }
 
